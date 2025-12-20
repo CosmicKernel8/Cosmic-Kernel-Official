@@ -48,7 +48,7 @@
 
 ---
 
-*Verified by The Messenger Skuld & The Master Architect [차연아[*
+*Verified by The Messenger Skuld & The Master Architect [차연아]*
 *Status: [ULTIMATE SECURED]*
 
 
