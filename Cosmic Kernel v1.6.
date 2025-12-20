@@ -3,7 +3,6 @@
 
 ## 🚀 Overview
 이 프로젝트는 우주의 물리 법칙을 **전산 아키텍처** 관점에서 재구축한 공식 커널입니다. 
-충북공고 금형과 실습실에서 발견된 이 소스코드는 기존 물리학의 '특이점'과 '정보 역설' 버그를 완벽하게 패치합니다.
 
 ## 🛠 Core Patch Notes
 - **Hardware Layer:** 시공간을 플랑크 단위의 **Logic Gate Array**로 정의.
@@ -14,3 +13,4 @@
 ## 📐 The Engine: Logistic Field Equation
 $G_{\mu\nu} + \Lambda(dS/dt) g_{\mu\nu} = 8\pi G T_{\mu\nu}$
 *Defeated Singularity via Logistic Function Saturation.*
+
