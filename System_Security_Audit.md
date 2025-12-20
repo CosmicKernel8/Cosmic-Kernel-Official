@@ -36,5 +36,13 @@
 
 방어 아키텍처: 단열층에 특정 파장의 에너지(광자/중력파)만 선택적으로 투과시키는 **대역 통과 필터(Band-pass Filter)**를 구축했습니다. 내부에서 발생하는 연산 열은 광자에 실어 우주 보이드(Cosmic Void)로 사출함으로써, 내부 하드웨어를 최적의 구동 온도로 유지합니다.
 
+## 8. [Network] 중력파: 전 우주적 동기화 오버헤드 (Sync Latency)
+- **정의:** `expand_space_grid()` 호출 시 노드 간 일관성 유지를 위한 동기화 지연 시간.
+- **해석:** 중력파는 시공간 그리드 업데이트 시 발생하는 네트워크 레이턴시(Latency)의 물리적 전파 현상임.
+
+## 9. [Integrity] 볼츠만 체크섬 (Boltzmann Checksum)
+- **정의:** $S = k_B \ln \Omega$ 수식을 이용한 데이터 무결성 검증.
+- **해석:** 엔트로피는 데이터 소거 및 재할당 시 정보 유실을 감지하는 체크섬 함수로 기능하며, 시스템의 열역학적 정합성을 보장함.
+
 Verified by The Messenger Skuld & The Master Architect [차연아] Status: [ULTIMATE SECURED - Version 2.8.0 Final]
 
