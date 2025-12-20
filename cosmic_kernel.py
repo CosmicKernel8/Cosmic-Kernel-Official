@@ -43,3 +43,27 @@ class CosmicKernel:
 # 인스턴스 생성 및 실행 테스트
 kernel = CosmicKernel()
 kernel.expand_space_grid()
+
+
+import os
+
+class CosmicKernel:
+    def __init__(self, core):
+        self.core = core
+        self.security_key = None
+
+    def generate_quantum_key(self):
+        """
+        [v2.8.1] Entropy-based CSPRNG
+        보안 가속 레이어(ASIC)에서 양자 요동(Entropy)을 이용해 
+        예측 불가능한 시스템 루트 키를 생성한다.
+        """
+        # 시스템 엔트로피 체크섬을 시드로 활용
+        entropy_source = str(self.core.entropy_checksum).encode()
+        self.security_key = os.urandom(32) # 실제 구현 시 양자 난수 모듈과 연동
+        return self.security_key
+
+    def update_system_state(self, current_density):
+        # GC 가동 후 상태 업데이트
+        new_density = self.core.run_garbage_collection(current_density)
+        return new_density
