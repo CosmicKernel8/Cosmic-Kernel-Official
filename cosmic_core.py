@@ -21,3 +21,16 @@ def process_cosmic_load(self, entropy_rate):
         
         self.system_status = "Optimized & Synchronized"
         print("Finalizing: Data Integrity verified via Hawking Radiation Protocol.")
+  def calculate_expansion_rate(self, current_time, system_load):
+    """
+    [v1.8.2 Patch] Sigmoid-based Auto-scaling logic.
+    매개변수 L, k, t0를 통해 시스템 붕괴(Crash)를 방지함.
+    """
+    L = self.MAX_BANDWIDTH  # 최대 확장 한계
+    k = self.ENTROPY_SENSITIVITY # 확장 가속도 상수
+    t0 = self.CRITICAL_LOAD_TIME # 오토 스케일링 활성화 시점
+    
+    # 시그모이드 함수를 통한 동적 확장률 계산
+    expansion_rate = L / (1 + math.exp(-k * (current_time - t0)))
+    
+    return expansion_rate
