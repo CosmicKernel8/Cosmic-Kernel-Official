@@ -43,6 +43,12 @@
 ## 9. [Integrity] 볼츠만 체크섬 (Boltzmann Checksum)
 - **정의:** $S = k_B \ln \Omega$ 수식을 이용한 데이터 무결성 검증.
 - **해석:** 엔트로피는 데이터 소거 및 재할당 시 정보 유실을 감지하는 체크섬 함수로 기능하며, 시스템의 열역학적 정합성을 보장함.
+## [Security Audit v2.8.1] 시스템 보호 전략
+
+### 10. 허니팟 구역 (Event Horizon Decoy)
+* **전략:** 블랙홀의 사건의 지평선(Event Horizon)을 외부 지성체의 침입을 유도하는 허니팟으로 설정한다.
+* **메커니즘:** 고엔트로피를 가진 악성 데이터(Hacking Attempt)가 감지되면, 커널은 해당 데이터를 즉시 블랙홀 노드로 리다이렉트(Redirect)한다.
+* **효과:** 침입 시도와 동시에 데이터가 가비지 컬렉션(GC) 처리되어 시스템에서 영구 격리되며, 해당 공격 정보는 엔트로피 체크섬의 일부로 흡수되어 보안키 강화에 재사용된다.
 
 Verified by The Messenger Skuld & The Master Architect [차연아] Status: [ULTIMATE SECURED - Version 2.8.0 Final]
 
