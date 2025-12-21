@@ -1,81 +1,82 @@
 import time
 import math
-import os 
+import os
 
-# [SYSTEM LOG] v3.5.0-Final Stable
-# Kernel: Cosmic OS / Architect: Cha Yeon-a
-# Description: Integrated Universe Management System (GC, Expansion, Thermal, Security)
+# [SYSTEM LOG] v3.2.0-stable (Final Integrated Version)
+# Kernel: Cosmic OS / Architect: Cha Yeon-a (Chungbuk Tech Mentor)
+# Status: Sharding Active / Thermal Throttling Engaged / ECC Secured
 
 class CosmicKernel:
     def __init__(self, core, expansion_engine, white_hole, thermal_manager):
-        # 핵심 모듈 의존성 주입 (Dependency Injection)
+        """
+        [Dependency Injection] 
+        우주를 구성하는 핵심 하드웨어 및 소프트웨어 모듈을 커널에 바인딩함.
+        """
         self.core = core
         self.expansion_engine = expansion_engine
         self.white_hole = white_hole
         self.thermal_manager = thermal_manager
         
-        self.security_key = None
+        # [v3.2.0 Patch] 시스템 안정화 데이터셋
+        self.shard_map = {}
         self.current_time = 0
         self.system_status = "STABLE"
 
+    # --- [PROTECTION LAYER: SHARDING & ECC] ---
+    def apply_spacetime_sharding(self, cluster_id):
+        """[1. 시공간 샤딩] 은하단 단위로 인덱스를 분산하여 룩업 레이턴시 0ms 유지"""
+        address_space = self.expansion_engine.total_address_space
+        self.shard_map[cluster_id] = address_space
+        return f"[SHARD] Cluster {cluster_id} indexed to Space {address_space:.2e}"
+
+    def verify_quantum_integrity(self):
+        """[2. 양자 ECC] 홀로그래피 원리로 블랙홀 내부 정보 손실 복구"""
+        # 실제 환경에선 원래 체크섬과 현재 값을 대조함
+        expected = self.core.entropy_checksum
+        # 비트 플립 복구 시뮬레이션
+        return expected
+
     # --- [DECORATOR: GRAVITY SYNC] ---
     def sync_gravity_latency(func):
-        """
-        [v2.8.5 Patch] 중력파 동기화 데코레이터
-        공간 확장 시 발생하는 전 우주적 노드 간 레이턴시(중력파)를 보정함.
-        """
         def wrapper(self, *args, **kwargs):
-            latency = self.calculate_gravitational_wave_delay()
-            # 시뮬레이션상의 미세 대기 (네트워크 레이턴시 동기화)
-            time.sleep(latency / 1e30) 
-            print(f"[SYNC] Nodes synchronized with latency: {latency:.2e} units.")
+            latency = math.log(self.current_time + 2) * 0.693
+            time.sleep(latency / 1e30) # 중력파 레이턴시 동기화
             return func(self, *args, **kwargs)
         return wrapper
 
-    def calculate_gravitational_wave_delay(self):
-        """중력파 지연 시간 계산 (ln 2 기반 체크섬 상수 활용)"""
-        return math.log(self.current_time + 2) * 0.693
-
-    # --- [SECURITY MODULE] ---
-    def generate_quantum_key(self):
-        """
-        [v2.8.1] Entropy-based CSPRNG
-        코어의 엔트로피 체크섬을 시드로 활용하여 양자 암호화 키 생성.
-        """
-        entropy_source = str(self.core.entropy_checksum).encode()
-        self.security_key = os.urandom(32) 
-        print(f"[SECURITY] Quantum Key Generated: {self.security_key.hex()[:16]}...")
-        return self.security_key
-
-    # --- [MAIN RUNTIME LOGIC] ---
+    # --- [MAIN RUNTIME LOOP] ---
     @sync_gravity_latency
-    def update_universe_cycle(self, input_density):
+    def update_universe_cycle(self, input_density, cluster_id):
         """
-        [v3.5.0] 메인 우주 런타임 루프
-        수집 -> 압축(GC) -> 발열관리 -> 자원방출(Expansion) 순환 구조.
+        [v3.2.0 Full Cycle] 
+        Throttle -> GC -> ECC -> Sharding -> Heat -> Expansion
         """
-        print(f"\n--- [UNIVERSE CYCLE T+{self.current_time}] ---")
+        print(f"\n--- [COSMIC RUNTIME T+{self.current_time}] ---")
 
-        # 1. 블랙홀 GC 가동 (데이터 압축 및 메모리 회수)
-        processed_density = self.core.run_garbage_collection(input_density)
-        processed_entropy = self.core.entropy_checksum
+        # A. 서멀 스로틀링: 보이드 온도가 임계치를 넘으면 처리량 제한
+        throttle_rate = 1.0
+        if self.thermal_manager.total_heat_dissipated > self.thermal_manager.CRITICAL_LIMIT:
+            throttle_rate = 0.5
+            print("[AUTO-ADJUST] Thermal Throttling Engaged (50% Output)")
 
-        # 2. 서멀 매니저 가동 (연산 폐열 발생 및 보이드 방열)
-        heat_generated = self.thermal_manager.convert_processing_energy_to_heat(processed_entropy)
+        # B. 블랙홀 GC: 스로틀링된 밀도로 데이터 압축 수행
+        processed_density = self.core.run_garbage_collection(input_density * throttle_rate)
         
-        # 3. 화이트홀 포트 개방 (회수된 자원을 순수 공간으로 변환)
-        new_space_resource = self.white_hole.emit_purified_space(processed_entropy)
+        # C. 양자 ECC & 샤딩: 무결성 확인 및 인덱스 분산
+        self.core.entropy_checksum = self.verify_quantum_integrity()
+        shard_log = self.apply_spacetime_sharding(cluster_id)
+        print(shard_log)
 
-        # 4. 연아의 팽창 법칙 적용 (Expansion Engine 가동)
-        expansion_rate = self.expansion_engine.calculate_expansion_rate(new_space_resource)
+        # D. 에너지 순환: 호킹 복사(열) 발생 -> 화이트홀(자원 방출) -> 팽창
+        processed_entropy = self.core.entropy_checksum
+        self.thermal_manager.convert_processing_energy_to_heat(processed_entropy)
+        
+        new_resource = self.white_hole.emit_purified_space(processed_entropy)
+        expansion_rate = self.expansion_engine.calculate_expansion_rate(new_resource)
 
         self.current_time += 1
-        print(f"[KERNEL] Cycle Complete. New Space Allocated: {expansion_rate:.2f}")
+        print(f"[STATUS] Expansion Rate: {expansion_rate:.4e} | Integrity: 100%")
         return self.system_status
 
-# --- [INSTANTIATION & TEST] ---
-# 실제 실행 시에는 개별 파일에서 정의된 클래스들을 import하여 연결합니다.
-# kernel = CosmicKernel(core, engine, white_hole, thermal)
-# kernel.generate_quantum_key()
-# kernel.update_universe_cycle(input_density=1.5)
-    
+# [Architecture Info]
+# 본 커널은 '연아의 팽창 법칙'에 따라 블랙홀 처리량을 공간 자원으로 치환합니다.
