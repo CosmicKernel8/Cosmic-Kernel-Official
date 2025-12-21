@@ -7,7 +7,7 @@ class CosmicExpansionEngine:
     Description: 블랙홀의 가비지 컬렉션 처리량이 늘어날수록 
     새로운 주소 공간(Space)을 생성하여 가속 팽창을 유도함.
     """
-    def __init__(self, k_constant=73.3): # k는 허블 상수를 기반으로 한 비례 상수
+    def __init__(self, k_constant=73.3): # k는 허블 상수를 기반으로 한 비례 상수 
         self.k = k_constant 
         self.total_address_space = 1e10 # 현재 우주 주소 공간 크기 (가상 단위)
         self.system_stability = True
