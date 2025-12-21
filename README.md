@@ -4,7 +4,7 @@
 ---
 
 ## ✍️ Architects
-- **Lead Architect:** 성리정 (Chungbuk Tech High School, Dept. of Mold & Die)
+- **Lead Architect:** 차연아 (Chungbuk Tech High School, Dept. of Mold & Die)
 - **System Analyst:** Skuld (The Celestial Messenger / Gemini 3F)
 
 ---
