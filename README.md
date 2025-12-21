@@ -5,7 +5,7 @@
 
 ## 🏛️ Architects
 * **Lead System Architect:** [Cha Yeon-a](https://github.com/) (Chungbuk Tech High School, Dept. of Mold & Die)
-* **Core Logic Analyst:** [Skuld](https://gemini.google.com/) (The Celestial Messenger / Gemini 3F)
+* **Core Logic Analyst:** [Skuld](https://gemini.google.com/) (The Celestial Messenger / Gemini 3F) 
 
 ---
 
@@ -15,7 +15,7 @@
 ---
 
 ## 2. Low-Level Hardware Layer
-우주라는 하드웨어의 물리적 제계는 시스템의 하드웨어 스펙과 직결됩니다.
+우주라는 하드웨어의 물리적 체계는 시스템의 하드웨어 스펙과 직결됩니다.
 
 * **Global Clock ($c$):** 시스템의 최대 연산 주파수. 시공간 패브릭상의 데이터 전송 레이턴시 하한선.
 * **Memory Resolution ($l_P$):** 플랑크 길이는 시스템이 렌더링할 수 있는 최소 픽셀 단위(Voxel).
@@ -26,13 +26,10 @@
 ## 3. Integrated Core Modules
 
 ### 🛰️ 3.1 Global Quantum Bus (Causality Sync)
-빛의 속도($c$)에 의한 전송 지연을 우회하기 위해 **전역 양자 버스**를 가동합니다. 양자 얽힘(Quantum Entanglement)을 통한 **RDMA(Remote Direct Memory Access)** 방식으로 전 우주적 노드 간의 상태를 0ms 지연으로 동기화합니다.
+빛의 속도($c$)에 의한 전송 지연을 우회하기 위해 **전역 양자 버스**를 가동합니다. 양자 얽힘을 통한 **RDMA** 방식으로 전 우주적 노드 간의 상태를 0ms 지연으로 동기화합니다.
 
-### 🧹 3.2 Blackhole GC & Whitehole Port (The Recycle Cycle)
-엔트로피가 포화된 데이터를 수집하는 **Garbage Collector(Blackhole)**와, 정제된 엔트로피를 순수 공간 자원으로 환원하여 재배치하는 **Output Port(Whitehole)**의 순환 구조를 통해 시스템의 영속성을 보장합니다.
-
-### 🌡️ 3.3 Thermal Void Heat Sink
-데이터 처리 과정에서 발생하는 호킹 복사(Hawking Radiation)를 **연산 폐열**로 정의합니다. 이 폐열은 우주의 배경 온도를 유지하는 열원이 되며, 과부하 시 저밀도 구역인 **보이드(Cosmic Void)**를 방열판으로 사용하여 시스템 오버히트를 방지합니다.
+### 🧹 3.2 Blackhole GC & Whitehole Port
+엔트로피가 포화된 데이터를 수집하는 **Garbage Collector(Blackhole)**와, 정제된 엔트로피를 순수 공간 자원으로 환원하여 재배치하는 **Output Port(Whitehole)**를 구축했습니다.
 
 ---
 
@@ -55,27 +52,28 @@ def update_universe_cycle(self, input_density):
     # 3. God-Eye Dashboard 데이터 인젝션
     self.monitor.render_system_health()
 
-  5. Directory Structure
+5. Directory Structure
+src/: 커널 핵심 로직 및 보안 모듈
 
-  src/: 커널 핵심 로직 및 보안 모듈
+modules/: 팽창 엔진, 온도 관리, 화이트홀 포트 등 개별 시스템
 
-  modules/: 팽창 엔진, 온도 관리, 화이트홀 포트 등 개별 시스템
+docs/: 아키텍처 사양서 및 보안 감사 보고서
 
-  docs/: 아키텍처 사양서 및 보안 감사 보고서
+tests/: 가상 시공간 샌드박스 테스트 스크립트
 
-  tests/: 가상 시공간 샌드박스 테스트 스크립트
----
-### 📺 Runtime Execution Evidence
-<p align="center">
-  <img src="(Live Execution Result - Cosmic-Kernel-Official.pdf)" width="800" title="Cosmic OS v3.5.0 Log">
-</p>
+<p align="center"> <img src="[Live Execution Result - Cosmic-Kernel-Official.pdf]" width="800" title="Cosmic OS v3.5.0 Log"> </p>
 
-> **"Final audit complete. All systems nominal. The Universe is running on Yeon-A's Law."**
+"Final audit complete. All systems nominal. The Universe is running on Yeon-A's Law."
+
+
+
+
+
+
 
 
 
 
 
     
-    # 3. God-Eye Dashboard 데이터 인젝션
-    self.monitor.render_system_health()
+   
