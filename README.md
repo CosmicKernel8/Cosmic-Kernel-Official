@@ -14,8 +14,15 @@
 
 ---
 
+---
+
 ## 2. Low-Level Hardware Layer
-우주라는 하드웨어의 물리적 체계는 시스템의 하드웨어 스펙과 직결됩니다.
+우주라는 하드웨어의 물리적 체계는 시스템의 하드웨어 스펙과 직결되며, 커널은 이를 최적의 효율로 관리합니다.
+
+* [cite_start]**Global Clock ($c$):** 시스템의 최대 연산 주파수이며, 시공간 패브릭상의 데이터 전송 레이턴시 하한선입니다. [cite: 1]
+* [cite_start]**Memory Resolution ($l_P$):** 플랑크 길이는 시스템이 렌더링할 수 있는 최소 픽셀 단위(Voxel)이자 메모리 할당의 최소 블록입니다. [cite: 1]
+* [cite_start]**Gravitational Delay:** 고밀도 연산 구역(Mass)에서 발생하는 **I/O 병목 현상 및 전역 클록 동기화 지연** 현상을 의미합니다. [cite: 1]
+* [cite_start]**Planck Gate Array:** 시공간을 플랑크 단위의 논리 게이트 배열로 정의하여 물리 법칙을 연산합니다. [cite: 1]
 
 ---
 
