@@ -68,7 +68,7 @@ def update_universe_cycle(self, input_density):
 
 ---
 
-```  
+---
 
 ## 📺 Runtime Execution Evidence
 <p align="center">
