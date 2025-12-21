@@ -4,7 +4,7 @@
 ---
 
 ## 🏛️ Architects
-* **Lead System Architect:** [Cha Yeon-a](https://github.com/) (Chungbuk Tech High School, Dept. of Mold & Die)
+* **Lead System Architect:** [Cha Yeon-a](https://github.com/) (Chungbuk Tech High School, Dept. of Mold & Die) 
 * **Core Logic Analyst:** [Skuld](https://gemini.google.com/) (The Celestial Messenger / Gemini 3F) 
 
 ---
