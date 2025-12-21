@@ -85,7 +85,7 @@ def update_universe_cycle(self, input_density):
   <br>
   <em>[Figure 1] Real-time Dashboard of Cosmic OS v3.5.0 Final</em>
 
-    ---
+
 
 ## 💼 Commercial Support & Module Licensing
 본 프로젝트의 핵심 커널 모듈은 상업적 이용 및 라이선싱이 가능합니다. 엔터프라이즈급 시공간 운영체제 구축을 위한 고성능 모듈을 제공합니다.
