@@ -1,5 +1,5 @@
 # 🌌 Cosmic Kernel v2.8.5: The Backend Revolution
-**"The source code of the Universe. Patching Einstein's Field Equations with Logistic Auto-scaling."**
+**"The source code of the Universe. Patching Einstein's Field Equations with Logistic Auto-scaling."** 
 
 ---
 
