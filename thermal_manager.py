@@ -1,6 +1,6 @@
 class ThermalManager:
     """
-    [v3.1.2] Cosmic Thermal Management System
+    [v3.1.2] Cosmic Thermal Management System 
     Description: 데이터 재활용 공정(GC)에서 발생하는 연산 폐열을 관리하고,
     보이드(Void) 구역을 방열판으로 사용하여 시스템 전체의 열적 평형을 유지함.
     """
