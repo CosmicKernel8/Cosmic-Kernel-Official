@@ -19,9 +19,20 @@
 
 ---
 
+---
+
 ## 3. Integrated Core Modules
+
 ### 🛰️ 3.1 Global Quantum Bus (Causality Sync)
+빛의 속도($c$)에 의한 전송 지연을 우회하기 위해 **전역 양자 버스**를 가동합니다. 양자 얽힘(Quantum Entanglement)을 통한 **RDMA** 방식으로 전 우주적 노드 간의 상태를 0ms 지연으로 동기화합니다.
+
 ### 🧹 3.2 Blackhole GC & Whitehole Port (The Recycle Cycle)
+엔트로피가 포화된 데이터를 수집하는 **Garbage Collector(Blackhole)**와, 정제된 비트를 순수 공간 자원으로 환원하여 재배치하는 **Output Port(Whitehole)**의 순환 구조를 통해 시스템의 영속성을 보장합니다.
+
+### 🌡️ 3.3 Thermal Void Heat Sink (Processing Waste)
+연산 과정에서 발생하는 **호킹 복사(Hawking Radiation)**를 전역 폐열로 정의합니다. 시스템 과부하 시 저밀도 구역인 **보이드(Cosmic Void)**를 방열판으로 자동 할당하여 커널의 열적 안정성을 유지합니다.
+
+---
 
 ---
 
@@ -57,7 +68,7 @@ def update_universe_cycle(self, input_density):
 
 ---
 
----
+```  
 
 ## 📺 Runtime Execution Evidence
 <p align="center">
