@@ -10,31 +10,23 @@
 ---
 
 ## 1. System Abstract
-본 프로젝트는 현대 물리학의 제반 현상을 **분산 컴퓨팅 및 자원 관리 아키텍처** 관점에서 재구축합니다. 시공간을 단순한 배경이 아닌 **동적 할당이 가능한 데이터 구조(Dynamic Data Structure)**로 정의하며, 자원 고갈(Entropy)에 대응하는 커널의 최적화 알고리즘을 파이썬으로 구현하여 증명합니다.
+본 프로젝트는 현대 물리학의 제반 현상을 **분산 컴퓨팅 및 자원 관리 아키텍처** 관점에서 재구축합니다.
 
 ---
 
 ## 2. Low-Level Hardware Layer
 우주라는 하드웨어의 물리적 체계는 시스템의 하드웨어 스펙과 직결됩니다.
 
-* **Global Clock ($c$):** 시스템의 최대 연산 주파수. 시공간 패브릭상의 데이터 전송 레이턴시 하한선.
-* **Memory Resolution ($l_P$):** 플랑크 길이는 시스템이 렌더링할 수 있는 최소 픽셀 단위(Voxel).
-* **Gravitational Delay:** 고밀도 연산 구역에서 발생하는 **I/O 병목 현상 및 동기화 레이턴시**.
-
 ---
 
 ## 3. Integrated Core Modules
-
 ### 🛰️ 3.1 Global Quantum Bus (Causality Sync)
-빛의 속도($c$)에 의한 전송 지연을 우회하기 위해 **전역 양자 버스**를 가동합니다. 양자 얽힘을 통한 **RDMA** 방식으로 전 우주적 노드 간의 상태를 0ms 지연으로 동기화합니다.
-
-### 🧹 3.2 Blackhole GC & Whitehole Port
-엔트로피가 포화된 데이터를 수집하는 **Garbage Collector(Blackhole)**와, 정제된 엔트로피를 순수 공간 자원으로 환원하여 재배치하는 **Output Port(Whitehole)**를 구축했습니다.
+### 🧹 3.2 Blackhole GC & Whitehole Port (The Recycle Cycle)
 
 ---
 
 ## 4. Implementation: Yeon-A's Expansion Law
-아키텍트 차연아가 도출한 **시공간 동적 할당 수식**은 블랙홀의 처리량($\Phi_{BH}$)에 비례하여 시스템의 주소 공간을 확장합니다.
+블랙홀의 처리량($\Phi_{BH}$)에 비례하여 시스템의 주소 공간을 확장합니다.
 
 $$\frac{d(Space)}{dt} = \kappa \cdot \Phi_{BH}$$
 
@@ -52,7 +44,7 @@ def update_universe_cycle(self, input_density):
     # 3. God-Eye Dashboard 데이터 인젝션
     self.monitor.render_system_health()
 
- 5. Directory Structure
+5. Directory Structure
 src/: 커널 핵심 로직 및 보안 모듈
 
 modules/: 팽창 엔진, 온도 관리, 화이트홀 포트 등 개별 시스템
@@ -60,7 +52,5 @@ modules/: 팽창 엔진, 온도 관리, 화이트홀 포트 등 개별 시스템
 docs/: 아키텍처 사양서 및 보안 감사 보고서
 
 tests/: 가상 시공간 샌드박스 테스트 스크립트
-
-
     
    
