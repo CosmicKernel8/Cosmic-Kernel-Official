@@ -27,7 +27,7 @@ def update_universe_cycle(self, input_density):
 
     # 3. God-Eye Dashboard 데이터 인젝션 [cite: 11]
     self.monitor.render_system_health() [cite: 12]
-```  <-- 여기에 이 기호가 꼭 있어야 4번이 끝나! 😠
+```
 
 ---
 
