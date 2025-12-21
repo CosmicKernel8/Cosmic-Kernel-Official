@@ -1,6 +1,6 @@
 import time
 import math
-import os
+import os 
 
 # [SYSTEM LOG] v3.5.0-Final Stable
 # Kernel: Cosmic OS / Architect: Cha Yeon-a
