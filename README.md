@@ -67,7 +67,7 @@ def update_universe_cycle(self, input_density):
 ---
 ### 📺 Runtime Execution Evidence
 <p align="center">
-  <img src=" " width="800" title="Cosmic OS v3.5.0 Log">
+  <img src="(Live Execution Result - Cosmic-Kernel-Official.pdf)" width="800" title="Cosmic OS v3.5.0 Log">
 </p>
 
 > **"Final audit complete. All systems nominal. The Universe is running on Yeon-A's Law."**
