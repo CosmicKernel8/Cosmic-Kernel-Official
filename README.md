@@ -43,7 +43,7 @@ def update_universe_cycle(self, input_density):
 
     # 3. God-Eye Dashboard 데이터 인젝션
     self.monitor.render_system_health()
-
+---
 5. Directory Structure
 src/: 커널 핵심 로직 및 보안 모듈
 
