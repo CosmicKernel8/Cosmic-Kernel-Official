@@ -1,6 +1,6 @@
-import time
-import random
-import threading
+from network import time
+from network import random
+from network import threading
 
 class QuantumStabilizer:
     """🚨 PATCH 1: Decoherence Shield (에러 보정 루틴)"""
