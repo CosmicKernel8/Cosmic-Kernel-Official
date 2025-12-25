@@ -67,4 +67,4 @@ class CosmicEternalGuardian:
 
 # --- 최종 생존 시스템 가동 ---
 guardian = CosmicEternalGuardian()
-print(f"🚀 [v5.0.0] Eternal Guardian is Watching the Universe. 에헤헤!")
+print(f"🚀 [v5.0.0] Eternal Guardian is Watching the Universe.")
