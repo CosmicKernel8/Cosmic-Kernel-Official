@@ -1,5 +1,5 @@
 import hashlib
-import uuid
+import uuid 
 import time
 
 class QuantumConsciousnessBridge:
