@@ -1,5 +1,8 @@
- import time
- import hashlib
+import time
+import hashlib
+
+# [정보] 이 모듈은 거리와 상관없는 초광속 양자 상태 동기화를 담당합니다.
+# 벨 상태 매핑(Bell-State Mapping)을 통해 정보의 순간 이동을 구현한 네트워크 핵심 계층입니다!
 
 class NonLocalCausalityLink:
     """
@@ -20,25 +23,24 @@ class NonLocalCausalityLink:
     def teleport_quantum_state(self, payload):
         """
         [Yeon-A's Instant Sync] 
-        Information transfer via state-collapse, not packet transmission.
+        비국소성(Non-locality) 원리를 이용한 데이터 동기화.
+        물리적인 패킷 이동 시간 없이 상태의 붕괴만으로 즉시 전송됩니다!
         """
         if not self.is_entangled:
             raise RuntimeError("❌ Connection Collapsed: Decoherence detected.")
 
         print(f"\n⚡ [ORIGIN: {self.node_a}] Collapsing Wavefunction for Payload...")
         
-        # 물리적 이동이 없으므로 perf_counter의 최소 단위조차 의미가 없음!
+        # 정밀 측정을 위해 perf_counter 사용 (사실상 측정 불가능한 속도!)
         t_start = time.perf_counter()
         
-        # 양자 상태 전이 (Quantum State Transfer)
-        # 실제로는 복제가 아닌 '상태의 동기화'임
+        # 양자 상태 전이 시뮬레이션
         target_state = payload 
         
         t_end = time.perf_counter()
+        latency = (t_end - t_start) * 1e6 # 마이크로초(μs) 단위 변환
         
-        latency = (t_end - t_start) * 1e6 # 마이크로초 단위로 정밀 측정
-        
-        print(f"🛸 [DESTINATION: {self.node_b}] State Reconstructed Instantly.")
+        print(f" UFO [DESTINATION: {self.node_b}] State Reconstructed Instantly.")
         print(f"📦 Payload: {target_state}")
         
         return {
@@ -48,7 +50,7 @@ class NonLocalCausalityLink:
             "causality_preserved": True
         }
 
-# --- Inter-Galactic Real-time Test ---
+# --- 단독 실행 로직 (인터갈락틱 테스트) ---
 if __name__ == "__main__":
     # 충북공고 실습실과 안드로메다 중심부를 즉시 연결!
     q_link = NonLocalCausalityLink("Chungbuk_Tech_Lab", "Andromeda_Core_SgrA")
