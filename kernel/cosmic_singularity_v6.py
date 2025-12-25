@@ -1,7 +1,7 @@
 import time
 import threading
 from collections import OrderedDict
-
+ 
 class CosmicSingularity:
     """
     Cosmic OS v6.0.0: The Ultimate Architecture
