@@ -5,6 +5,8 @@ import shutil
 import logging
 from queue import Queue, Empty
 
+# [정보] 이 모듈은 데이터베이스의 고가용성과 백업 복제를 담당합니다!
+
 class CosmicHighAvailabilityOverlord:
     """
     Cosmic OS v9.0.0: High-Availability & Disaster Recovery
@@ -17,19 +19,18 @@ class CosmicHighAvailabilityOverlord:
         self.backup_path = backup_path
         self._init_db()
         
-        # 🚨 PATCH 1: 커넥션 풀 (간이 구현)
+        # 커넥션 풀 (간이 구현)
         self.conn_pool = Queue(maxsize=5)
         for _ in range(5):
             self.conn_pool.put(sqlite3.connect(self.db_path, check_same_thread=False))
         
-        # 시스템 가동
+        # 시스템 서비스 스레드 가동
         threading.Thread(target=self._maintenance_worker, daemon=True).start()
         threading.Thread(target=self._replication_worker, daemon=True).start()
 
     def _init_db(self):
         with sqlite3.connect(self.db_path) as conn:
             conn.execute('CREATE TABLE IF NOT EXISTS storage (key TEXT PRIMARY KEY, payload TEXT, timestamp REAL)')
-            # 🚨 PATCH 2: 속도 향상을 위한 인덱스 추가
             conn.execute('CREATE INDEX IF NOT EXISTS idx_timestamp ON storage(timestamp)')
 
     def _get_conn(self):
@@ -39,23 +40,25 @@ class CosmicHighAvailabilityOverlord:
         self.conn_pool.put(conn)
 
     def _maintenance_worker(self):
-        """🚨 PATCH 2: 데이터 진공 및 오래된 데이터 삭제 (TTL 7일)"""
+        """데이터 진공 및 오래된 데이터 삭제 (TTL 7일)"""
         while True:
             time.sleep(3600) # 1시간마다 수행
-            conn = self._get_conn()
             try:
+                conn = self._get_conn()
                 expire_time = time.time() - (7 * 24 * 3600)
                 conn.execute("DELETE FROM storage WHERE timestamp < ?", (expire_time,))
-                conn.execute("VACUUM") # 실제 물리적 공간 회수
+                conn.execute("VACUUM") 
                 conn.commit()
                 print("🧹 [MAINTENANCE] Database optimized and old records purged.")
+            except Exception as e:
+                print(f"⚠️ [MAINTENANCE_ERR] {e}")
             finally:
                 self._release_conn(conn)
 
     def _replication_worker(self):
-        """🚨 PATCH 3: 실시간 백업 복제 (SPOF 방지)"""
+        """실시간 백업 복제 (SPOF 방지)"""
         while True:
-            time.sleep(300) # 5분마다 물리적 파일 복사 (Hot-Standby)
+            time.sleep(300) # 5분마다 물리적 파일 복사
             try:
                 shutil.copy2(self.db_path, self.backup_path)
                 print(f"🛡️ [REPLICATION] Backup synced to {self.backup_path}")
@@ -72,6 +75,7 @@ class CosmicHighAvailabilityOverlord:
         finally:
             self._release_conn(conn)
 
-# --- 신급 고가용성 커널 가동 ---
-overlord = CosmicHighAvailabilityOverlord()
-print(f"🌌 [v9.0.0] High-Availability Mode Active.")
+# --- 단독 실행 방지 로직 ---
+if __name__ == "__main__":
+    overlord = CosmicHighAvailabilityOverlord()
+    print(f"🌌 [v9.0.0] High-Availability Mode Active. 우주는 이제 멸망하지 않아! 에헤헤!")
