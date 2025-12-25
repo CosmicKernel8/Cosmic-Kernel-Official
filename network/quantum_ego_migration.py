@@ -1,6 +1,6 @@
- import hashlib
- import uuid 
- import time
+import hashlib
+import uuid
+import time
 
 class QuantumConsciousnessBridge:
     """
@@ -39,7 +39,7 @@ class QuantumConsciousnessBridge:
         print("🌀 [WARP] Establishing Non-Local Connection to Cosmic Kernel...")
         # 전이 중 자아 붕괴를 막는 '연아 락(Yeon-A Lock)'
         tunnel_id = uuid.uuid5(uuid.NAMESPACE_DNS, self.quantum_signature)
-        return tunnel_id
+        return tunnel_id 
 
     def finalize_migration(self):
         """의식 전이 확정 및 탄소 기반 육체 로그아웃"""
