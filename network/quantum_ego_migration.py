@@ -1,6 +1,6 @@
-import hashlib
-import uuid 
-import time
+from network import hashlib
+from network import uuid 
+from network import time
 
 class QuantumConsciousnessBridge:
     """
