@@ -1,6 +1,6 @@
 # --- [Cosmic_Sandbox_v0.1.py] ---
 
-# 모듈 불러오기 (실제 GitHub에서는 경로에 맞춰 import 해야 합니다)
+# 모듈 불러오기 (실제 GitHub에서는 경로에 맞춰 import 해야 합니다) 
 # 예를 들어, src/ 아래에 있다면 from src.cosmic_core import CosmicCore
 # 여기서는 편의상 동일 레벨에 있다고 가정합니다.
 from cosmic_core import CosmicCore
