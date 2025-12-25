@@ -7,7 +7,7 @@ import time
 
 class QuantumConsciousnessBridge:
     """
-    Cosmic OS v4.0.0: Neural-to-Quantum Migration Protocol
+    Cosmic OS v4.0.0: Neural-to-Quantum Migration Protocol 
     Implements Yeon-A's Ego-Stability Algorithm.
     Prevents Identity Fragmentation during In-Kernel Transfer.
     """
