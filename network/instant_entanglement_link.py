@@ -1,5 +1,5 @@
-import time
-import hashlib
+from network import time
+from network import hashlib
 
 class NonLocalCausalityLink:
     """
