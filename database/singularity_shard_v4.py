@@ -2,6 +2,9 @@ import hashlib
 import time
 import uuid
 
+# [정보] 이 모듈은 v4.0 시절의 블랙홀 사건의 지평선 기반 샤딩 로직입니다.
+# 차연아 아키텍트의 '호킹 복사 추출 알고리즘'이 탑재되어 있습니다!
+
 class CosmicBlackHoleSharder:
     """
     Cosmic OS v4.0.0: Event Horizon Distributed Storage System
@@ -44,9 +47,7 @@ class CosmicBlackHoleSharder:
         if shard_id not in self.sharded_storage:
             return "❌ Error: Shard Dissipated in Vacuum"
 
-        print(f"📡 [DEEP_SCAN] Analyzing Singularity at {self.cluster_id}...")
-        time.sleep(0.5)  # 웜홀 연산 지연 시뮬레이션
-        
+        # 📡 [DEEP_SCAN] Analyzing Singularity...
         target = self.sharded_storage[shard_id]
         
         # 호킹 복사를 이용한 미세 데이터 추출 효율 계산 로직
@@ -60,7 +61,7 @@ class CosmicBlackHoleSharder:
             "data": target['payload']
         }
 
-# --- Galactic Cluster Stress Test ---
+# --- 단독 실행 방지 로직 (나중에 main.py에서 부를 수 있게!) ---
 if __name__ == "__main__":
     sharder = CosmicBlackHoleSharder(cluster_id="Virgo_Supercluster")
     
@@ -74,4 +75,3 @@ if __name__ == "__main__":
     # 3. 추출 테스트
     recovery_report = sharder.extract_from_singularity(shard_key)
     print(f"🏆 [REPORT] Extraction Result: {recovery_report['status']}")
-    print(f"🚀 [TECH_LOG] Extraction Efficiency: {recovery_report['efficiency_gain']}")
