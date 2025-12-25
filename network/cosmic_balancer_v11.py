@@ -1,6 +1,6 @@
-from network import hashlib
-from network import sqlite3
-from network import time
+ import hashlib
+ import sqlite3
+ import time
 
 class CosmicMultiverseBalancer:
     """
