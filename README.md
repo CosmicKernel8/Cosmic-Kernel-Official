@@ -39,7 +39,7 @@ Project_Cosmic_OS/
 └── tests/              # Unit testing for Quantum Coherence & Stability
 
 ---
-
+```
 ⚙️ Core Philosophy: "Yeon-A's Expansion Law"
 Inspired by the precision of Global Engineering and the rigor of Mold Manufacturing, every module follows the "Atomic Zero-Tolerance" principle.
 
@@ -50,6 +50,6 @@ Data Atomicity: Two-Phase Commit (2PC) ensuring migration integrity across shard
 Consistency: Distributed nodes must reach a Quorum before state commitment.
 
 ---
----
+```
 # Initialize Cosmic Environment
 python3 src/main_initializer.py --target "Andromeda_Node" --sync "Quantum"
