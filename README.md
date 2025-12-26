@@ -50,6 +50,6 @@ Data Atomicity: Two-Phase Commit (2PC) ensuring migration integrity across shard
 Consistency: Distributed nodes must reach a Quorum before state commitment.
 
 ---
-
+---
 # Initialize Cosmic Environment
 python3 src/main_initializer.py --target "Andromeda_Node" --sync "Quantum"
