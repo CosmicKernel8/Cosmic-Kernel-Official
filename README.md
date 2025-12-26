@@ -40,7 +40,7 @@ Project_Cosmic_OS/
 
 
 ```
-⚙️ Core Philosophy: "Yeon-A's Expansion Law"
+## ⚙️ Core Philosophy: "Yeon-A's Expansion Law"
 Inspired by the precision of Global Engineering and the rigor of Mold Manufacturing, every module follows the "Atomic Zero-Tolerance" principle.
 
 Kernel Integrity: Absolute thread safety via fine-grained item-level locking.
