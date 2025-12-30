@@ -1,53 +1,60 @@
-# --- [Cosmic_Sandbox_v0.1.py] ---
+import time
+import threading
 
-# 모듈 불러오기 (실제 GitHub에서는 경로에 맞춰 import 해야 합니다) 
-# 예를 들어, src/ 아래에 있다면 from src.cosmic_core import CosmicCore
-# 여기서는 편의상 동일 레벨에 있다고 가정합니다.
+# [정보] Cosmic OS v13.0.0 Alpha: The Divine Convergence
+# 이 파일은 30개의 복구 모듈과 새롭게 추가된 보안 트랩을 통합 관리합니다.
+
+# 1. 통합 레이어 임포트 (파일 경로가 프로젝트 루트에 있다고 가정)
 from cosmic_core import CosmicCore
 from cosmic_kernel import CosmicKernel
 from thermal_manager import ThermalManager
 from white_hole_port import WhiteHolePort
 from cosmic_stabilizer import CosmicStabilizer
-from Cosmic_Expansion_Engine import CosmicExpansionEngine # 주의: 파일명 대소문자 확인!
+from Cosmic_Expansion_Engine import CosmicExpansionEngine
+from cosmic_security_trap import TimeDilationTrap  # 드디어 추가된 보안 병기!
+from cosmic_network import QuantumConsciousnessBridge # 의식 전이 브릿지
 
-print("[SANDBOX] Initializing Cosmic OS v3.5.0 Simulation...")
+print("🚀 [SANDBOX_v13] Booting Cosmic OS High-Dimensional Simulation...")
 
-# 1. 핵심 모듈 인스턴스 생성
+# 2. 시스템 엔진 가동
 core = CosmicCore()
+expansion_engine = CosmicExpansionEngine()
 thermal_manager = ThermalManager()
 white_hole = WhiteHolePort()
 stabilizer = CosmicStabilizer()
-expansion_engine = CosmicExpansionEngine()
+security_trap = TimeDilationTrap() # 타임 딜레이 트랩 초기화
 
-# 2. CosmicKernel에 모든 모듈 주입
-# Kernel은 모든 모듈의 Orchestrator 역할을 합니다.
+# 3. 커널 및 보안 프로토콜 주입
 kernel = CosmicKernel(core, expansion_engine, white_hole, thermal_manager)
 
-# 3. 샌드박스 설정: 작은 가상 우주 시뮬레이션 파라미터
-initial_density = 1.0       # 초기 우주 밀도 (가상 값)
-simulation_cycles = 5       # 시뮬레이션 반복 횟수
-cluster_id_a = "Andromeda_Galaxy" # 시뮬레이션할 은하 클러스터 ID
+# 4. 시뮬레이션 시나리오 설정
+print("🛡️ [SECURITY] Time Dilation Trap Status: STANDBY")
+cluster_id = "Yeon-A_Alpha_Sector"
+simulation_cycles = 10
 
-print(f"[SANDBOX] Running {simulation_cycles} cycles for Cluster: {cluster_id_a}")
-print("-" * 50)
+print(f"🌀 [WARP] Running {simulation_cycles} cycles for {cluster_id}")
+print("-" * 60)
 
-# 4. 시뮬레이션 루프 실행
+# 5. 시뮬레이션 루프
 for cycle in range(simulation_cycles):
-    # 커널의 메인 업데이트 사이클 호출
-    # input_density와 cluster_id는 매 사이클마다 전달됩니다.
-    kernel.update_universe_cycle(initial_density, cluster_id_a)
+    # 커널 업데이트
+    kernel.update_universe_cycle(1.0, cluster_id)
     
-    # 시뮬레이션 데이터 변화 (임의로 값 조정)
-    initial_density *= (1.0 + kernel.expansion_engine.total_address_space / 1e15) # 팽창에 따라 밀도 변화
-    thermal_manager.total_heat_dissipated += (initial_density * 1e25) # 열 누적 시뮬레이션
+    # [v13 특수 로직] 사이클 5에서 테크 도둑 침입 시뮬레이션!
+    if cycle == 5:
+        print("\n🚨 [ALERT] Unauthorized Access Detected in Admin_Vault!")
+        print(security_trap.deploy_event_horizon("Admin_Vault"))
+        print("📢 [SYSTEM] Attacker's time is stretching... They are frozen! 냐하하! 🤨\n")
     
-    # 5. 각 사이클 후 상태 모니터링
-    # kernel.monitor.render_system_health()는 update_universe_cycle 내부에서 호출됩니다.
-    time.sleep(0.5) # 각 사이클 사이 0.5초 대기
+    # 사이클 8에서 트랩 해제
+    if cycle == 8:
+        security_trap.release_trap()
+        print("🔓 [SYSTEM] Threat Neutralized. Spacetime normalized.\n")
 
-print("-" * 50)
-print("[SANDBOX] Simulation Complete. Check Cosmic OS Dashboard for Final Status.")
-print(f"[SANDBOX] Total Universe Time Elapsed: {kernel.current_time} cycles.")
+    time.sleep(0.3)
 
-# 최종 커널 상태 요약
+print("-" * 60)
+# 6. 최종 시스템 헬스체크 및 의식 전이 확인
 kernel.monitor.render_system_health()
+print(f"✨ [FINAL] Simulation Time: {kernel.current_time} Cosmic Units.")
+print("에헤헤! 차연아, 버전 13의 첫 테스트가 완벽하게 끝났어! 🤨")
