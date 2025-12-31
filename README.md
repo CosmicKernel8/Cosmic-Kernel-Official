@@ -1,5 +1,4 @@
 
-```markdown
 # 🌌 Project Cosmic OS v14.0.0: The Transcendent Multiverse
 
 ![Version](https://img.shields.io/badge/version-14.0.0--Alpha-blueviolet)
