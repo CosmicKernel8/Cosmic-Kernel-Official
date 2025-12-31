@@ -41,7 +41,7 @@ Project_Cosmic_OS/
 
 ---
 
-
+```
 ## ⚙️ Core Philosophy: "The Infinite Expansion Law"
 Rooted in the extreme precision of Mold Engineering and the scalability of Global Cloud Architectures, v14.0 follows the "Divine Convergence" principle:
 
@@ -53,7 +53,7 @@ Resilient Consensus: The universe survives as long as a Quorum of shards exists.
 
 ---
 
-
+```
 ## 🚀 Initialize Transcendent Environment
 # Booting the v14.0 Multiverse Kernel
 python3 transcendence/v14_multiverse.py --subject "Yeon-A_Transcendent" --mode "Infinite_Fork"
