@@ -28,7 +28,7 @@
 
 ## 🛠️ Directory Structure
 
-```text
+text
 Project_Cosmic_OS/
 ├── src/                    # Legacy Core: Base Physics & Fundamental Logic
 ├── galactic_layer/         # 🚀 NEXT-GEN: Async Kernel, Relativistic Patch, & Multiplexers
