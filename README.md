@@ -31,7 +31,7 @@
 * **Ego-Stability v14.0**: Advanced SHA3-512 quantum signatures preventing identity fragmentation during inter-dimensional migration.
 * **Time Dilation Trap**: Low-cost network wait-queue manipulation to freeze intruders in an artificial event horizon.
 
----
+
 
 ## 🛠️ Directory Structure
 
