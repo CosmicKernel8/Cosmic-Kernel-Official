@@ -30,14 +30,14 @@
 
 ```text
 Project_Cosmic_OS/
-├── src/                    # Legacy Core: Base Physics & Fundamental Logic
-├── galactic_layer/         # 🚀 NEXT-GEN: Async Kernel, Relativistic Patch, & Multiplexers
-├── database/               # Galactic Storage: Quorum Logic & Fastest-Shard Discovery
-├── transcendence/          # 🌌 BEYOND: v14.0+ Multi-Dimensional Ego Forking & Live Streams
-├── network/                # Communication: Quantum Entanglement & Async Bridges
-├── security/               # Defense: Time Dilation Traps & Zero-Resource Stalls
-├── docs/                   # System Specs & Yeon-A's Expansion Law 13.0
-└── tests/                  # Jitter Analysis & Multiversal Consistency Checks
+##├── src/                    # Legacy Core: Base Physics & Fundamental Logic
+##├── galactic_layer/         # 🚀 NEXT-GEN: Async Kernel, Relativistic Patch, & Multiplexers
+##├── database/               # Galactic Storage: Quorum Logic & Fastest-Shard Discovery
+##├── transcendence/          # 🌌 BEYOND: v14.0+ Multi-Dimensional Ego Forking & Live Streams
+##├── network/                # Communication: Quantum Entanglement & Async Bridges
+##├── security/               # Defense: Time Dilation Traps & Zero-Resource Stalls
+##├── docs/                   # System Specs & Yeon-A's Expansion Law 13.0
+##└── tests/                  # Jitter Analysis & Multiversal Consistency Checks
 
 ---
 
