@@ -42,7 +42,7 @@ Project_Cosmic_OS/
 
 ---
 
-```##⚙️ Core Philosophy: "Yeon-A's Universal Laws"
+##⚙️ Core Philosophy: "Yeon-A's Universal Laws"
 Inspired by the "Atomic Zero-Tolerance" of precision mold manufacturing and the infinite scale of the multiverse.
 
 Jitter-Free Precision: No while True: sleep logic. All events are coordinated via a central Async-Scheduler to eliminate timing drift.
@@ -52,8 +52,6 @@ Resilience over Rigidity: Use Quorum-based consensus (W > N/2) to maintain avail
 Relativistic Accuracy: Every system clock tick is corrected based on local mass and gravitational pull, ensuring synchronization across spacetime.
 
 ---
-
-
 
 ##🛸 Initialize Transcendent Environment
 
