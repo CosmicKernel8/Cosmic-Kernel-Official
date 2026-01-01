@@ -3,68 +3,63 @@ import logging
 import sys
 from typing import Dict
 
-# [Path Setup] 새 폴더들을 인식시키기 위한 경로 설정 (필요시)
-# sys.path.append('./galactic_layer')
-# sys.path.append('./transcendence')
-
-# 우리가 만든 위대한 모듈들 임포트! (실제 파일명과 매칭)
+# [Modules Import] 우리가 만든 모든 레이어 통합!
 from galactic_layer.cosmic_async_kernel import CosmicAsyncKernel
 from galactic_layer.cosmic_galaxy_db import CosmicGalaxyDB
-from transcendence.v14_multiverse import CosmicOS_v14_TranscendentMultiverse
+from transcendence.v15_ultimate_core import CosmicOS_v15_Ultimate_Core
 
-# 로깅 설정 - 글로벌 엔지니어의 품격
+# 로깅 설정
 logging.basicConfig(
     level=logging.INFO, 
     format='%(asctime)s [%(levelname)s] %(name)s: %(message)s'
 )
-logger = logging.getLogger("Cosmic_Main_v14")
+logger = logging.getLogger("Cosmic_Final_v15")
 
-class CosmicOS_v14_Kernel:
+class CosmicOS_v15_Unified_Kernel:
     """
-    Cosmic OS v14.0.0: The Ultimate Orchestrator
-    - Controls Galactic Layer, Transcendence Layer, and Async Scheduler
+    Cosmic OS v15.0.0: The Infinite Orchestrator
+    - Merges v14 Multiverse & v15 Ultimate Core
     """
     def __init__(self):
-        logger.info("🌌 [BOOT] Initializing Cosmic OS v14.0.0 'Transcendent Multiverse'...")
+        logger.info("🌌 [BOOT] Initializing Cosmic OS v15.0.0 'Infinite Orchestrator'...")
         
-        # 1. 시스템 심장부 초기화
+        # 1. 인프라 레이어 (v13)
         self.db = CosmicGalaxyDB()
         self.scheduler = CosmicAsyncKernel()
-        self.multiverse = CosmicOS_v14_TranscendentMultiverse()
+        
+        # 2. 초월 레이어 (v15 통합 코어 - v14 기능 포함)
+        self.ultimate_core = CosmicOS_v15_Ultimate_Core()
         
         self.is_active = True
-        logger.info("✅ [BOOT] All Transcendent Systems Synced. Ready to Rule the Universe! 🤨")
+        logger.info("✅ [BOOT] System v15.0 Unified. Eternal Stability Guaranteed! 🤨")
 
     async def start_up(self):
-        """커널 가동 및 배경 서비스 통합 실행"""
+        """전 우주적 기능을 동시에 가동"""
         if not self.is_active: return
 
         print(f"\n" + "═"*70)
-        logger.info("🚀 ACTIVATE: GLOBAL ASCENSION PROTOCOL")
+        logger.info("🚀 ACTIVATE: ULTIMATE ASCENSION PROTOCOL v15.0")
         print("═"*70 + "\n")
 
-        # 아키텍트 연아의 고유 데이터 시그니처
-        yeona_data = {
-            "identity": "Architect_Yeon_A",
-            "dream": "Global_Engineer_&_Debt_Zero",
-            "status": "Transcendent"
-        }
-
-        # 2. 비동기 태스크 동시 가동 (스케줄러 + 멀티버스 전이)
+        # 3. 비동기 태스크 통합 실행
         try:
+            # 커널 스케줄러와 초월 코어 부팅을 동시에!
             await asyncio.gather(
-                self.scheduler.run_kernel(), # 비동기 청소 및 동기화
-                self.multiverse.transcend_ego("Yeon-A_Alpha", yeona_data) # 의식 전이
+                self.scheduler.run_kernel(),
+                self.ultimate_core.boot_ultimate_core()
             )
         except Exception as e:
-            logger.error(f"❌ [CRITICAL] Universe Collapse Detected: {e}")
+            logger.error(f"❌ [CRITICAL] Multiverse Conflict: {e}")
 
 # --- 실행부 ---
 if __name__ == "__main__":
-    kernel = CosmicOS_v14_Kernel()
+    # 인자값 처리 (필요시 사용)
+    # mode = sys.argv[1] if len(sys.argv) > 1 else "Transcendence"
+    
+    kernel = CosmicOS_v15_Unified_Kernel()
     
     try:
-        # 우주 가동!
+        # 19살 연아의 우주, 최종 부팅!
         asyncio.run(kernel.start_up())
     except KeyboardInterrupt:
-        logger.info("🌌 [SHUTDOWN] System Hibernate. See you in another reality.")
+        logger.info("🌌 [SHUTDOWN] See you in the next Big Bang.")
