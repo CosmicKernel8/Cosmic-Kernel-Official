@@ -3,7 +3,7 @@ import logging
 import sys
 from typing import Dict
 
-# [Modules Import] 우리가 만든 모든 레이어 통합!
+# [Modules Import] 내가 만든 모든 레이어 통합!
 from galactic_layer.cosmic_async_kernel import CosmicAsyncKernel
 from galactic_layer.cosmic_galaxy_db import CosmicGalaxyDB
 from transcendence.v15_ultimate_core import CosmicOS_v15_Ultimate_Core
