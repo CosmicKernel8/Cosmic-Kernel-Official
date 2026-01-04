@@ -78,4 +78,4 @@ class CosmicHighAvailabilityOverlord:
 # --- 단독 실행 방지 로직 ---
 if __name__ == "__main__":
     overlord = CosmicHighAvailabilityOverlord()
-    print(f"🌌 [v9.0.0] High-Availability Mode Active. 우주는 이제 멸망하지 않아! 에헤헤!")
+    print(f"🌌 [v9.0.0] High-Availability Mode Active.")
