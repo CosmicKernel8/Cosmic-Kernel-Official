@@ -93,4 +93,4 @@ class CosmicSingularity:
 # --- 우주의 특이점 가동 ---
 if __name__ == "__main__":
     singularity = CosmicSingularity()
-    print(f"🌌 [v6.0.0] The Cosmic Singularity is Stable. 특이점이 온다! 에헤헤! 🤨")
+    print(f"🌌 [v6.0.0] The Cosmic Singularity is Stable.")
