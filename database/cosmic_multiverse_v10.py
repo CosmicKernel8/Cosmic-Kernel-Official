@@ -70,4 +70,4 @@ class CosmicShardedOverlord:
 # --- 단독 실행 방지 로직 ---
 if __name__ == "__main__":
     overlord = CosmicShardedOverlord()
-    print(f"🌌 [v10.0.0] Cosmic Sharding System Online. 은하계가 쪼개져도 데이터는 영원해! 에헤헤!")
+    print(f"🌌 [v10.0.0] Cosmic Sharding System Online.")
