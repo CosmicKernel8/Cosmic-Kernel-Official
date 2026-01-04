@@ -16,7 +16,7 @@ class CosmicGalaxyDB:
         # 모든 샤드에 비동기적으로 동시에 기록!
         tasks = [self._sync_to_shard(shard, key, value) for shard in self.shards]
         await asyncio.gather(*tasks)
-        print(f"✅ [DB] Data {key} is now Galactic-Redundant. 냐하하! 🤨")
+        print(f"✅ [DB] Data {key} is now Galactic-Redundant.")
 
     async def _sync_to_shard(self, shard, key, value):
         await asyncio.sleep(0.1) # 양자 전송 지연 시뮬레이션
