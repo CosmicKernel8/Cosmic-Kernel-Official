@@ -29,7 +29,7 @@ class CosmicAsyncKernel:
 
     async def run_kernel(self):
         """커널의 모든 엔진을 단일 이벤트 루프에서 동시 가동!"""
-        print("👑 [v13.0.0] Global Async Scheduler Activated. 지터(Jitter) 따위는 없다! 😠")
+        print("👑 [v13.0.0] Global Async Scheduler Activated. 지터(Jitter) 따위는 없다.")
         
         # 모든 루프를 코루틴으로 등록하여 단일 스레드에서 정밀하게 제어
         self.tasks = [
@@ -47,4 +47,4 @@ if __name__ == "__main__":
         asyncio.run(kernel.run_kernel())
     except KeyboardInterrupt:
         kernel.is_running = False
-        print("🌌 [SYSTEM] Universe Safely Collapsed. 에헤헤! 🤨")
+        print("🌌 [SYSTEM] Universe Safely Collapsed.")
