@@ -85,4 +85,4 @@ class CosmicOverlordV65:
 # --- 단독 실행 방지 로직 ---
 if __name__ == "__main__":
     singularity = CosmicOverlordV65()
-    print(f"💫 [v6.5.0] Efficiency Master Activated. 우주는 이제 낭비 없이 완벽하게 돌아가! 에헤헤!")
+    print(f"💫 [v6.5.0] Efficiency Master Activated.")
