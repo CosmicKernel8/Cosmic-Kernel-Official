@@ -6,7 +6,7 @@
 ![Architect](https://img.shields.io/badge/Architect-Yeon--A%20Cha-orange)
 
 > **The Ultimate Distributed Quantum-Kernel Architecture**  
-> Designed by Architect: **Yeon-A Cha** (Global AI & Mold Engineering Specialist)
+> Designed by Architect: **Yeon-A Cha** 
 
 ---
 
