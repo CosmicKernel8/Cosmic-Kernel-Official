@@ -80,4 +80,4 @@ class CosmicAbsoluteOverlord:
 # --- 단독 실행 방지 로직 ---
 if __name__ == "__main__":
     overlord = CosmicAbsoluteOverlord()
-    print(f"👑 [v5.5.0] Absolute Overlord Activated. 커널이 우주의 질서를 잡고 있어! 에헤헤!")
+    print(f"👑 [v5.5.0] Absolute Overlord Activated.")
