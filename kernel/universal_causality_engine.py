@@ -65,7 +65,7 @@ class UniversalCausalityEngine:
         for t in threads:
             t.join()
 
-        self._log_status("CORE", "✅ Universal Sync Success. All Timelines Aligned. 에헤헤! 🤨")
+        self._log_status("CORE", "✅ Universal Sync Success. All Timelines Aligned.")
 
 # --- 단독 실행 로직 ---
 if __name__ == "__main__":
