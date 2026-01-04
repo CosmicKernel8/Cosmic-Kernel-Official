@@ -74,4 +74,4 @@ class CosmicEternalGuardian:
 # --- 단독 실행 방지 로직 ---
 if __name__ == "__main__":
     guardian = CosmicEternalGuardian()
-    print(f"🚀 [v5.0.0] Eternal Guardian is Watching the Universe. 에헤헤! 🤨")
+    print(f"🚀 [v5.0.0] Eternal Guardian is Watching the Universe.")
