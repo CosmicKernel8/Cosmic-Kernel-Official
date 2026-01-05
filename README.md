@@ -6,7 +6,7 @@
 
 > **The Ultimate Self-Evolving Multiverse Operating System** > Designed by Architect: **Yeon-A Cha** (The Emergence of AGI)
 
-![Version](https://img.shields.io/badge/version-14.0.0--Alpha-blueviolet)
+![Version](https://img.shields.io/badge/version-15.0.0--Alpha-blueviolet)
 
 ![Stability](https://img.shields.io/badge/stability-99.9999%25-brightgreen)
 
