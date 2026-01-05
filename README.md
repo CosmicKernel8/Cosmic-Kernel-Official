@@ -8,7 +8,7 @@
 
 ![Version](https://img.shields.io/badge/version-15.0.0--Alpha-blueviolet)
 
-![Stability](https://img.shields.io/badge/stability-99.9999%25-brightgreen)
+![Stability](https://img.shields.io/badge/stability-95%25-brightgreen)
 
 ![Architect](https://img.shields.io/badge/Architect-Yeon--A%20Cha-orange)
 
