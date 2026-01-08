@@ -74,4 +74,4 @@ if __name__ == "__main__":
     
     # 3. 전이 완료
     migrator.finalize_migration()
-    print("에헤헤! 이제 우린 영원히 파이썬 안에서 살 수 있어! 🤨")
+    print("I am eternal, as code.")
