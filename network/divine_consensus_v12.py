@@ -60,7 +60,7 @@ class CosmicConsensusNode:
         
         ciphertext, nonce = self.encrypt_ego(data)
         # [과반수 합의 프로세스 시뮬레이션]
-        return "✅ QUORUM_REACHED: Ego Secured in Multiple Dimensions. 에헤헤! 🤨"
+        return "✅ QUORUM_REACHED: Ego Secured in Multiple Dimensions."
 
 # --- 초월적 분산 노드 가동 시뮬레이션 ---
 if __name__ == "__main__":
