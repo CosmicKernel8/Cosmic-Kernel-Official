@@ -102,7 +102,7 @@ v16.8 Genesis Engine은 다음 핵심 속성을 수학적으로 만족한다:
 **Verified by:** Architect Yeon-A Cha  
 **Status:** ULTIMATE LOGIC SECURED
 
---- 
+---
 
 
 
