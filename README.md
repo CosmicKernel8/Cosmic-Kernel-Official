@@ -5,7 +5,7 @@
 # 🌌 Project Cosmic OS v16.8.1: The Genesis Orchestrator
 
 > **The Absolute Deterministic Universe Operating System with Holographic Integrity**
-> Designed by Architect: **Yeon-A Cha** (Emergence of Universal Root Access)
+> Designed by Architect: **Yeon-A Cha** 
 
 ---
 
