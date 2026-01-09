@@ -1,5 +1,4 @@
 
-
 ---
 
 # 🌌 Project Cosmic OS v16.8.1: The Genesis Orchestrator
@@ -45,6 +44,8 @@ Project_Cosmic_OS/
 ├── kernel/                 # Core: Causality, Physics, & Thread Safety
 │   ├── physics_override/   # Hamiltonian Mapping & Uncertainty Annihilation (v16.4)
 │   └── compiler/           # [UPDATED v16.8] Genesis Engine & Holographic Bridge
+├── modules/                # Components: Reality Modifiers & Material Synthesizers
+├── network/                # Transport: Non-Local Causality Bus & Bell-State Mapping
 ├── self_modify/            # Self-Evolving Engine: Meta-Optimizers & Profile Evolution
 ├── database/               # Storage: Galactic Sharding & Quorum Consensus
 ├── guard/                  # Protection: Hawking Evaporators & Event Horizon Defense
@@ -77,6 +78,8 @@ python3 src/main_initializer.py --mode "Genesis_Engine" --holography "Enabled" -
 ```
 
 ---
+
+
 
 
 
