@@ -1,8 +1,3 @@
-
-
-
-
-```markdown
 # 🌌 Project Cosmic OS v16.8.1
 
 ## The Genesis Orchestrator
