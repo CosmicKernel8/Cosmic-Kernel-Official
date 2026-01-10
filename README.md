@@ -118,9 +118,8 @@ This project is a **conceptual and architectural portfolio**.
 
 It does **not** claim physical realization, experimental validation, or real-world deployment.
 
-```
 
----
+
 
 
 
