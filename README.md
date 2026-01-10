@@ -2,7 +2,7 @@
 
 ---
 
-````
+````markdown
 # 🌌 Project Cosmic OS v16.8.1  
 **Conceptual Systems Architecture for Information, Stability, and Learning Dynamics**
 
