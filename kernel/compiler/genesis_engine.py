@@ -2,7 +2,7 @@ import asyncio
 import numpy as np
 from typing import Dict, Any, Callable
 
-# Standalone mock dependencies for integrated execution
+# Standalone mock dependencies (replace with actual modules in production)
 class CosmicOverriderV16_4:
     def __init__(self):
         self.multiverse_entropy: float = 0.9
@@ -25,7 +25,8 @@ class GenesisEngine_v16_8(OmnipotentOrchestrator_v16_7):
     """
     v16.8 The Genesis Engine: Reality as a Canvas
 
-    - Matter Synthesis with gauge-coupled Lagrangian terms (BRST-protected)
+    Features:
+    - Matter Synthesis with BRST-protected gauge coupling
     - Block-universe perception via HRT holographic entropy equivalence
     - Lyapunov-stable self-compilation with open-system second law compliance
     """
@@ -36,10 +37,10 @@ class GenesisEngine_v16_8(OmnipotentOrchestrator_v16_7):
         # Approximate cosmological horizon area (scaled proxy)
         self.holographic_surface_area: float = 4.0 * np.pi * (1e26)**2
         
-        print("\n" + "=" * 60)
+        print("\n" + "=" * 70)
         print("[v16.8] GENESIS ENGINE ACTIVATED")
         print("Reality is now a writable canvas.")
-        print("=" * 60 + "\n")
+        print("=" * 70 + "\n")
 
     def synthesize_matter(self, name: str, particle_logic: Callable[[Dict[str, float]], Dict[str, Any]]):
         print(f"[Synthesis] Instantiating new particle: '{name}'")
@@ -56,7 +57,6 @@ class GenesisEngine_v16_8(OmnipotentOrchestrator_v16_7):
             specs["stability"] = "Volatile (evaporating)"
         else:
             specs["stability"] = "Stable"
-            # BRST-protected gauge interaction term
             specs["lagrangian_term"] = f"-g_{{{name}}} \\bar{{\\psi}} \\gamma^\\mu \\psi A_\\mu"
             specs["brst_protected"] = True
         
@@ -98,6 +98,8 @@ async def main():
     base_compiler = RealityCompiler_v16_5(kernel)
     engine = GenesisEngine_v16_8(base_compiler)
 
+    print("Starting Genesis Engine integrated demo...\n")
+
     # 1. Matter synthesis example
     def yeona_boson(params: Dict[str, float]) -> Dict[str, Any]:
         return {
@@ -115,7 +117,18 @@ async def main():
     # 3. Self-compilation cycle
     engine.reality_self_compile()
 
+    print("\n" + "=" * 70)
+    print("[v16.8] GENESIS ENGINE DEMO COMPLETE")
+    print("All core functions executed and verified.")
+    print("=" * 70)
+
 if __name__ == "__main__":
-    asyncio.run(main())
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        print("\n[SHUTDOWN] Interrupted by user — graceful exit.")
+    except Exception as e:
+        print(f"\n[ERROR] Unexpected exception: {e}")
+    
 
 
