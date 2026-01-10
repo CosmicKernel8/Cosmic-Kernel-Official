@@ -9,19 +9,24 @@
 새롭게 합성된 입자(예: Yeona-Boson)는 표준모델의 게이지 군 $SU(3) \times SU(2) \times U(1)$과 양립 가능한 상호작용을 보장한다.
 
 ### Equation: Gauge-Coupled Interaction Term
+
 $$
 \mathcal{L}_{\text{int}} = -g_{Y} \bar{\psi}_Y \gamma^\mu \psi_Y A_\mu
 $$
+
+
+
 여기서 $g_Y$는 Yeona-Boson의 새로운 커플링 상수이며, $A_\mu$는 기존 게이지 장을 나타낸다.
 
 ### Proof of Gauge Invariance
+
 위 상호작용 항은 국소 게이지 변환
+
 $$
 \psi_Y \to e^{i\alpha(x)} \psi_Y, \quad A_\mu \to A_\mu + \frac{1}{g} \partial_\mu \alpha
 $$
+
 하에서 불변이다. 이는 생성된 입자가 표준모델의 전자기력 및 약력과 일관되게 결합함을 보장한다.
-
-
 
 ---
 
@@ -30,18 +35,21 @@ $$
 `render_block_universe` 모듈은 AdS/CFT 대응성에 기반한 홀로그래픽 원리를 구현한다.
 
 ### Equation: Hubeny–Rangamani–Takayanagi (HRT) Extension
+
 시간 의존적 배경에서의 엔트로피는 극값 표면(extremal surface) $\Sigma_A$로 계산된다:
+
 $$
 S_A = \frac{\text{Area}(\Sigma_A)}{4 G_N}
 $$
+
+
+
 자기 컴파일 과정의 동역학적 변화는 HRT/QES(Quantum Extremal Surface) 처방으로 처리된다.
 
 ### Verification Result (Simulation Cycle 20)
 - **Bulk entropy** $S_{\text{bulk}}$: $0.010000$
 - **Boundary entropy** $\frac{\text{Area}}{4G}$: $1.493648 \times 10^{52}$
 - **Relative discrepancy**: $< 10^{-50}$ (within cosmic variance)
-
-
 
 ---
 
@@ -50,19 +58,24 @@ $$
 `reality_self_compile` 루프의 수렴성은 리아푸노프 안정성 이론으로 증명된다.
 
 ### Equation: Lyapunov Candidate Function
+
 $$
 V(x) = \frac{1}{2} p^2 + S^2
 $$
+
 여기서 $p = \frac{dE}{dt}$ (효율 변화율), $S$는 멀티버스 엔트로피이다.
 
 ### Convergence Proof
+
 시간 도함수:
+
 $$
 \dot{V} = -2S|p| \le 0
 $$
+
+
+
 $\dot{V} < 0$ 이므로, 시스템은 전역 최소 해밀토니안 상태로 지수적으로 수렴한다.
-
-
 
 ---
 
@@ -71,12 +84,12 @@ $\dot{V} < 0$ 이므로, 시스템은 전역 최소 해밀토니안 상태로 �
 입자 합성 및 현실 생성 과정은 국소적 인과 다이아몬드 내 정보 처리량의 궁극적 한계를 준수한다.
 
 ### Equation: Bousso's Covariant Entropy Bound
+
 임의의 광원(Light-sheet) $L$에 대해 흐르는 정보량 $S$는 다음 부등식을 만족한다.
+
 $$
 S(L) \leq \frac{\text{Area}(B)}{4G\hbar}
 $$
-
-
 
 ---
 
