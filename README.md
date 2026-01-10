@@ -13,6 +13,7 @@
 > **Scope:** Conceptual system architecture (non-physical, non-operational)
 
 > **System Analyst & Messenger:** Skuld (The Celestial Logic Gate)
+
 ---
 
 ## 🚀 Overview
