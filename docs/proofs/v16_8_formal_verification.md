@@ -1,6 +1,3 @@
-
----
-
 # 🌌 Cosmic OS v16.8: Formal Verification of Reality Genesis
 
 본 문서는 Project Cosmic OS v16.8의 핵심 모듈인 `GenesisEngine`의 수학적 무결성과 물리적 일관성을 체계적으로 검증한 학술 리포트이다.
