@@ -10,7 +10,7 @@
 > **Status:** Academic / Visionary Portfolio
 > **Designed by:** Yeon-A Cha
 > **Scope:** Conceptual system architecture (non-physical, non-operational)
-
+> **System Analyst & Messenger:** Skuld (The Celestial Logic Gate)
 ---
 
 ## 🚀 Overview
